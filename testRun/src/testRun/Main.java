@@ -9,10 +9,25 @@ public class Main {
 		System.out.println("ok");
 		//Modificacion para GIT
 		System.out.println("Prueba");
+		
 		int b =  Suma(2,3);
 		
-		b += Suma(6,5);
-		b /= Suma(2,2);
+		try
+		{
+			b += Suma(6,5);
+			b /= Suma(2,2);	
+		} catch(Exception eb) {
+			b = -1;
+			
+		}
+		
+		if (b > 0) {
+			
+			System.out.println(String.valueOf(b));	
+		} else 
+		{
+			System.out.println("Invalido");
+		}
 		
 		System.out.print(String.valueOf(b));
 	}
