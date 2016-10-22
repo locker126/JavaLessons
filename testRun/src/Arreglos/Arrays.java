@@ -20,6 +20,25 @@ public class Arrays {
 			System.out.println("Numeros[" + i + "] = " + numeros[i]);
 		}
 		
+		
+		String[] nombres = {"Roy", "Robert", "Xinia"};
+		
+		String nombre = "Mario J Hernandez Vargas";
+		
+		for ( int i = 0; i < nombre.length(); i ++){
+			char letra = nombre.charAt(i);
+			System.out.println("Letra en posicion (" + i + ") = " + letra );
+			
+					
+		}
+		int contador = 0;
+		for (String nombre1 : nombres ){
+			
+			System.out.println(" nombres(" + contador + ") = " + nombre1 );
+			contador ++;
+			
+		}
+		
 	}
 
 }
