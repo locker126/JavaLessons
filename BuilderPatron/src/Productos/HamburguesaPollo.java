@@ -7,7 +7,7 @@ public class HamburguesaPollo extends Hamburguesa {
 	@Override
 	public float precio() {
 		// TODO Auto-generated method stub
-		return 18000;
+		return 1800;
 	}
 
 	@Override

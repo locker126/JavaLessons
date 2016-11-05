@@ -14,10 +14,10 @@ public class CasadoBuilder {
 		return casado1;
 	}
 	
-	public Casado Normal(){
+	public Casado Normal(CocaCola cc, HamburguesaPollo hp){
 		Casado casado1 = new Casado();
-		casado1.AddItem(new CocaCola());
-		casado1.AddItem(new HamburguesaPollo());
+		casado1.AddItem(cc);
+		casado1.AddItem(hp);
 		return casado1;
 	}
 	

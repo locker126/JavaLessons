@@ -22,7 +22,7 @@ public class fourArray {
 			}
 			
 		}
-		System.out.println("Esta es una prueba de GIT desde Visual Studio")
+		
 		
 		
 		
