@@ -1,23 +1,24 @@
 package Factoring;
 
+import color.factory.Color;
+import color.factory.Colores;
 import formas.*;
 
-public class ShapeFactory {
+public class ShapeFactory extends AbstractFactory {
 
-	public shape getShape(String forma){
+	public shape getShape(Formas forma){
 		
-		switch (forma) {
-		case "Circle":
+		if (forma == Formas.CIRCULO) {
 			return new Circle();
-		case "Rectangle":
+		} else if (forma == Formas.RECTANGULO) {
 			return new Rectangle();
-		case "Square":
+		} else 	if (forma == Formas.CUADRADO) {
 			return new Square();
-		default:
-			return new Circle();
-		
-		
+		} else {
+			return null;
+			
 		}
+		
 		
 		
 		// TODO Auto-generated constructor stub
@@ -26,4 +27,12 @@ public class ShapeFactory {
 		
 	}
 
+	@Override
+	public Color getColor(Colores color) {
+		// TODO Auto-generated method stub
+		throw new ClassCastException("Formas no pueden crear colores");
+	}
+
+
+	
 }
